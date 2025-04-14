@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #ffc107;
+        }
+        .developer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .developer-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .developer-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+        }
+        .developer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+        .developer-card img:hover {
+            transform: scale(1.1);
+        }
+        .developer-card h3 {
+            margin-bottom: 5px;
+            color: #ffc107;
+        }
+        .developer-card p {
+            color: #ddd;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 15px 0;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meet Our Developers</h1>
+    <div class="developer-container">
+        <div class="developer-card">
+            <img src="aculacul.jpg" alt="Developer 1">
+            <h3>Daryl Jave A. Acul-acul</h3>
+            <p>Head Developer</p>
+        </div>
+        <div class="developer-card">
+            <img src="randolph gomez2.jpg" alt="Developer 2">
+            <h3>Randolph B. Gomez</h3>
+            <p>Former Head Developer</p>
+        </div>
+        <div class="developer-card">
+            <img src="charles.jpg" alt="Developer 3">
+            <h3>Charles Castillon</h3>
+            <p>Designer</p>
+        </div>
+        <div class="developer-card">
+            <img src="developerljay.jpg" alt="Developer 4">
+            <h3>LordJay Edullantes</h3>
+            <p>Programmer</p>
+        </div>
+        <div class="developer-card">
+            <img src="apal rj.jpg" alt="Developer 5">
+            <h3>Rj Apal</h3>
+            <p>Senior Developer</p>
+        </div>
+        <div class="developer-card">
+            <img src="Gaabucayan, Tristan Jophel D-3987.jpg" alt="Developer 6">
+            <h3>Tristan Jophel D. Gaabucayan</h3>
+            <p>Content Manager</p>
+        </div>
+        <div class="developer-card">
+            <img src="keirbi.jpg" alt="Developer 7">
+            <h3>Kierbi Pinguit</h3>
+            <p>Designer</p>
+        </div>
+        <div class="developer-card">
+            <img src="kerby.jpg" alt="Developer 8">
+            <h3>Kerby James Pajaron</h3>
+            <p>QA Tester</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            flex-direction: column;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+        }
+        .product img {
+            width: 70%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .product img:hover {
+            transform: scale(1.1);
+        }
+        .product h3 {
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #ffc107;
+        }
+        .product p {
+            color: #ddd;
+        }
+        .specs {
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            font-size: 0.9em;
+            color: white;
+            border-radius: 5px;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px 0;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <img src="iphn15.png" alt="iPhone 15 Pro">
+            <h3>iPhone 15 Pro</h3>
+            <p>₱85,000</p>
+            <div class="specs">
+                <p>📱 6.1-inch Super Retina XDR Display</p>
+                <p>⚡ A17 Pro Chip</p>
+                <p>📸 48MP Triple Camera</p>
+                <p>🔋 3274mAh Battery</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="iphn1444.png" alt="iPhone 14">
+            <h3>iPhone 14</h3>
+            <p>₱60,000</p>
+            <div class="specs">
+                <p>📱 6.1-inch Super Retina XDR Display</p>
+                <p>⚡ A15 Bionic Chip</p>
+                <p>📸 12MP Dual Camera</p>
+                <p>🔋 3279mAh Battery</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="ipdmin6-removebg-preview.png" alt="iPad Mini 6">
+            <h3>iPad Mini 6</h3>
+            <p>₱34,990</p>
+            <div class="specs">
+                <p>📱 8.3-inch Liquid Retina Display</p>
+                <p>⚡ A15 Bionic Chip</p>
+                <p>📸 12MP Rear & Ultra-Wide Front Camera</p>
+                <p>🔋 All-day Battery Life</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="iphn1666.png" alt="iPhone 16">
+            <h3>iPhone 16</h3>
+            <p>₱54,990</p>
+            <div class="specs">
+                <p>📱 6.1-inch Super Retina XDR Display</p>
+                <p>⚡ A18 Chip</p>
+                <p>📸 48MP Dual Camera</p>
+                <p>🔋 3561mAh Battery</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="s23smsung.png" alt="Samsung Galaxy S23 Ultra">
+            <h3>Samsung Galaxy S23 Ultra</h3>
+            <p>₱90,000</p>
+            <div class="specs">
+                <p>📱 6.8-inch Dynamic AMOLED 2X</p>
+                <p>⚡ Snapdragon 8 Gen 2</p>
+                <p>📸 200MP Quad Camera</p>
+                <p>🔋 5000mAh Battery</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="pixl88.png" alt="Google Pixel 8 Pro">
+            <h3>Google Pixel 8 Pro</h3>
+            <p>₱65,000</p>
+            <div class="specs">
+                <p>📱 6.7-inch LTPO OLED</p>
+                <p>⚡ Google Tensor G3</p>
+                <p>📸 50MP Triple Camera</p>
+                <p>🔋 5050mAh Battery</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="xiaomi1333.png" alt="Xiaomi 13 Pro">
+            <h3>Xiaomi 13 Pro</h3>
+            <p>₱55,000</p>
+            <div class="specs">
+                <p>📱 6.73-inch LTPO AMOLED</p>
+                <p>⚡ Snapdragon 8 Gen 2</p>
+                <p>📸 50MP Triple Camera</p>
+                <p>🔋 4820mAh Battery</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="s9tab.png" alt="Samsung Galaxy Tab S9">
+            <h3>Samsung Galaxy Tab S9</h3>
+            <p>₱54,990</p>
+            <div class="specs">
+                <p>📱 11-inch Dynamic AMOLED 2X Display (120Hz)</p>
+                <p>⚡ Qualcomm Snapdragon 8 Gen 2</p>
+                <p>📸 13MP Rear & 12MP Ultra-Wide Front Camera</p>
+                <p>🔋 8,400mAh Battery</p>
+                <p>✏️ S Pen Included (IP68 Water & Dust Resistant)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
